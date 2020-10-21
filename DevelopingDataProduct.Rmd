@@ -1,0 +1,24 @@
+---
+title: "DevelopingDataProduct_01"
+author: "RACHIT KUMAR"
+date: "21/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(leaflet)
+```
+
+##ProjectIntro._DDP
+this is rachit kumar's map project of ddp
+
+
+```{r}
+my_map <- leaflet() %>%
+        addTiles
+my_map <- my_map %>%
+        addMarkers(lat=51.5079, lng=0.0877,
+                   popup="The is Sydney London_Bridge")
+my_map
+```
+
